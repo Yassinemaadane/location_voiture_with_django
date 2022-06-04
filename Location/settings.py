@@ -38,6 +38,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'offres',
+    'directeurs',
+    'agences',
+    'agents',
+    'clients',
+    'parkings',
+    'voitures',
+    'demandes',
+    'taches',
+    'chauffeurs',
+
 ]
 
 MIDDLEWARE = [
@@ -83,7 +94,7 @@ WSGI_APPLICATION = 'Location.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pfa_db',
+        'NAME': 'location',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': '127.0.0.1',
