@@ -4,6 +4,7 @@ from django.db import models
 
 class Voiture(models.Model):
     Matricule = models.CharField(max_length=10 , primary_key=True)
+    Image=models.ImageField(default='default.png',blank=True)
     Marque = models.CharField(max_length=50)
     Modele = models.CharField(max_length=50)
     TypePermis = models.CharField(max_length=1)
